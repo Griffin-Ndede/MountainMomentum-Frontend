@@ -1,0 +1,285 @@
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image:url(./components/background1.jpeg);
+    background-size: cover;
+   
+   
+}
+svg{
+    width: 170px;
+    height: auto;
+   margin-top: 30px;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    /* padding: 20px 2px; */
+    /* box-shadow: 0 5px 15px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 200px;
+    width: 100%
+       
+      
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    right: 600px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 50px;
+
+
+}
+h1{
+    text-align: center;
+    margin: bottom px; 
+    color: #fff;
+    font-size: 6em; /* Adjust this value to increase or decrease the size */
+    font-weight: bold;
+    margin-bottom: 30%;
+    position:relative;
+}
+
+.custom-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  p{
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 50px;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+    bottom: 280px;
+   
+   
+  }
+
+  button.homebutton1,
+  button.homebutton2 {
+    padding: 15px 30px; /* Adjust padding for height and width */
+    font-size: 1.5em; /* Adjust font size */
+    height: 80px; /* Adjust button height */
+    width: 400px; /* Adjust button width */
+    border-radius: 60px;
+    background-color:  #f18e33;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+ 
+  .homebutton1{
+    position: relative;
+    right: 20px;
+  }
+  .homebutton2{
+    position: relative;
+    left: 200px;
+    
+    
+  }
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 200px;
+  background: #fff;
+  padding-bottom: 30px;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.text{
+  color: #f18e33;
+  font-size: 48px;
+  font-weight: 700;
+
+}
+.underline{
+  width: 60px;
+  background: #f18e33;
+  border-radius: 9px;
+}
+ 
+.inputs{
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+} */
+  
+.container {
+  width:600px; /* Increase max-width for a larger form */
+  height: 880px;
+  margin: auto;
+  padding: 40px; /* Increase padding for more space around the form */
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.underline {
+  width: 150px;
+  height: 5px;
+  background-color: #f18e33;
+  margin: 5px auto;
+  border-radius: 5px;
+ 
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
+
+.input input {
+  width: 90%;
+  padding: 20px; 
+  background: transparent;
+  border: 1px solid #797979;
+  border-radius: 8px; 
+  font-size: 18px;
+  margin-bottom: 50px;
+  
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.input div {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+
+.submit-container {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.submit   {
+  padding: 15px 30px;
+  background-color: #f18e33;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
+ 
+}
+
+.submit:hover {
+  background-color: #000;
+}
+
+.view-password {
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 3px;
+ 
+  position: relative;
+  bottom: 95px;
+  left: 525px;
+
+}
+.packages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.package-card {
+  margin: 10px;
+  padding: 40px; /* Increased padding for larger cards */
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+  width: 350px;
+  height: 300px; /* Adjusted width to make the cards larger */
+  position: relative;
+  bottom: 200px;
+  transition: transform 0.2s;
+}
+
+.package-card:hover {
+  transform: scale(1.05);
+}
+
+.package-card h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+.package-card-content {
+  padding: 0;
+  border-radius: 5px;
+}
+
+ 
+
